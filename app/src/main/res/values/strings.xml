@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">LucidDreamCatcher</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_schedule">Schedule</string>
+    <string name="custom_reality">Create custom text for check</string>
+
+    <string name="title_activity_target_list">TargetListActivity</string>
+    <string name="title_schedule_activity">Schedule</string>
+
+
+    <string name="Today">Today\n I\n realized</string>
+    <string name="Targets">targets</string>
+    <string name="title_activity_check_real">Reality check</string>
+    <string name="check_real">Check the\n Reality</string>
+    <string name="then_tap">and\n tap</string>
+    <string name="description_hint">Enter a description of the target</string>
+    <string name="length">The length of the text can\'t be over 50 symbols</string>
+    <string name="picture">Choose a picture of target</string>
+
+    <string name="interval">Range</string>
+    <string name="setAlarm">Set alarm</string>
+    <string name="SilentMode">SILENT MODE</string>
+    <string-array name="AlarmTime">
+        <item> 15 minutes </item>
+        <item> 30 minutes </item>
+        <item> 45 minutes </item>
+        <item> 1 hour</item>
+        <item> 1.5 hours</item>
+        <item> 3 hours </item>
+    </string-array>
+
+    <string-array name="SoundChoose">
+        <item>Ring</item>
+        <item>Ring 2</item>
+        <item>Shaman 1</item>
+        <item>Shaman 2</item>
+        <item>Shaman 3</item>
+    </string-array>
+
+    <string name="ChooseTime">Choose a time</string>
+    <string name="Error">Error</string>
+
+    <string name="ToastChooseTime">Choose a range of signal</string>
+    <string name="AlarmCancelToast">Alarm canceled</string>
+    <string name="Vibro">Vibro</string>
+    <string name="startTime">from</string>
+    <string name="endTime">to</string>
+    <string name="Ringtone">Sound</string>
+    <string name="CustomRingtone">Ringtone</string>
+
+    <string name="POSITIVE_BUTTON">OK</string>
+    <string name="NEGATIVE_BUTTON">Cancel</string>
+
+    <string name="ChooseAudioFile">Choose a audio file</string>
+    <string name="CustomSound">Failed to load the audio file.\nTry again.</string>
+    <string name="Add">Add</string>
+
+
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="Balls_Is_Full">The trap is full</string>
+
+    <string-array name="TextCheckReal">
+        <item>Look at your hands</item>
+        <item>Рierce your palm with finger</item>
+        <item>Look at the mirror</item>
+        <item>Read any text 2 times</item>
+        <item>Look at the watch</item>
+        <item>Turn around yourself</item>
+
+    </string-array>
+    <string name="title_activity_about">About</string>
+     <string name="about_description">When we are dreaming, we look at the viewer who is watching a movie. This program will be directed by his own dreams. We want to go to another planet? You are welcome! Or learn how to build pyramids in Egypt? Very well! How about to look into the future? And this is possible! Or maybe someone wants to see long-gone loved ones? In the world of dreams, through the mirror of the world, everything is possible! Even to make a discovery of global scale, such as Mendeleev\'s famous table. To get to this amazing state need only remember what you want to get there, you have to have the intention and awareness. For this we need to practice. The best time to exercise - it is when we are fresh and cheerful. To begin with you need to select objects, events and facts that need to pay attention to the day - let\'s call them targets. Our task - not to forget, but always find and fix the target. Thus, the brain will form conditioned reflexes, which are necessary for the realization that you are sleeping.
+    So. In the morning, on a widget by clicking on an empty net we get to the "target" at the bottom we see four colored balls. By clicking on them, go in the "Editor select targets" Here we see a picture (icon) and a brief description of the target. We think of what we could meet in the afternoon? Perhaps our residence or place of work - the area near the airport. Then, select the plane. Or maybe out of that house, as always, the road runs across the treacherous cat - choose the cat. Every day we take out the garbage, and during the day that a discard in the trash. Excellent, select the trash. With this all clear. Next to the picture there is a hint - a verbal description of the target. If you do not like the lyrics, and we want to remove it, then we do it by long pressing on it. Now the most difficult. During the day, it is necessary to "catch" as possible targets. Each target will a bead trapped in the net dream.The more beads collect in a day, the better. But in any case, do not pursue quantity. It is important to quality. On the morning after the set target, we will track them throughout the day. As soon as the event or the object falls into the field of our attention immediately press the corresponding button-bead. For example, every time we raise or lower the ladder, must realize and remember about it and lock the target. To do this, touch in the grid on the widget, go to the "targets", where we find the pre-selected morning icon, in this case, "ladder", click on it. We try to be careful and do not miss a single event. First, we forget about it, but daily exercise will lead to the fact that nothing can escape from our attention. The next step - to be even more vigilant, train the attention and learn how to check the reality:
+    Under the trap of dreams hang feathers. Each pen is our reality check. That is, a test. Reality Check will take place in 2 ways:
+    \n1. At a signal from the notification. The menu is a window "Schedule" and there set the reporting interval. It is advisable to set the mode of vibration. And the sound alert. Below do not forget to night mode. This is to ensure that the phone is not disturbed at night. Our goal - to be vigilant and not to miss the signal that will be heard across the selected interval. After you hear a tone, mentally pronounces himself: "Now I will check the reality." Push the widget and get to the "Reality Check". Here in random mode, the program will offer the test. We perform the test and push down on the feather. On the widget appears suspended pen. If we missed a signal, on the widget feather falls down. A pile of fallen feathers will signal that we do not realize when we were close to our consciousness missed a signal, it is simply asleep, it was somewhere, but not here and not now. This behavior during sleep does not give the effect of awareness. Our task - is to develop a conditioned reflex on a certain signal to do the test.
+    \n2. After realizing the target and fixing it can be, even to do the test. In the "target" we see the pen, pushing it tested way we know. A little secret: We can go through a mini-test by pressing long on the bead. It appears description of the target, and the font color to match the color of beads down.
+    Why do we do this? We develop a conditioned reflex. In the dream, a dream is usually all that\'s what we do during the day. The habit of checking the reality will understand that we are in a dream. Some items may indicate that we are asleep. In a dream, everything is wrong. Mechanisms do not work, you can not turn the lock, you can not turn on the lights if you look in the mirror, we can not see yourself in a dream through doors and walls, free to pierce the finger palm, summer, and the clock says "Holy Crap". And yet, all this is an amazing reality as reality. And it is imperative to keep a diary of dreams. It may be an ordinary notebook. As soon as we will be there to record their dreams, we will train your memory and noticed that our daily target appear at night and during the day we select the target that we dream. Thus, we build bridges between dream and reality. Forming a kind of anchor and tags - markers. Finding them in their sleep, as well as during the day, we are guaranteed to get into an altered state - the state of lucid dreaming.
+    Believe me, your desire and a little practice you will discover a wonderful and amazing new world called Lucid dreaming!
+
+    We are constantly improving the program, then we plan a variety of useful and interesting innovations. All this in an interactive art form. Only your keen interest could give life to this exciting project. Download our software and do not forget to leave good reviews.
+
+    </string>
+
+
+</resources>

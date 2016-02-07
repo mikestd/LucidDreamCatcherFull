@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#f3e564">
+    <include android:id="@+id/toolbar_schedule"
+        layout="@layout/toolbar_schedule" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/interval"
+        android:id="@+id/interval_text"
+        android:textColor="@color/normal_color"
+        android:layout_marginTop="31dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/toolbar_schedule"
+        android:layout_alignLeft="@+id/spinner_Sound"
+        android:layout_alignStart="@+id/spinner_Sound" />
+
+
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_time"
+        android:entries="@array/AlarmTime"
+        android:spinnerMode="dropdown"
+        android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+        android:layout_alignTop="@+id/interval_text"
+        android:layout_toRightOf="@+id/spinner_Sound"
+        android:layout_toEndOf="@+id/spinner_Sound" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButtonRingtone"
+        android:checked="true"
+        android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+        android:layout_alignTop="@+id/spinner_Sound"
+        android:layout_toRightOf="@+id/UriPath"
+        android:layout_toEndOf="@+id/UriPath" />
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButtonCustomRingtone"
+        android:checked="false"
+        android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+        android:layout_alignBottom="@+id/UriPath"
+        android:layout_toRightOf="@+id/UriPath"
+        android:layout_toEndOf="@+id/UriPath"
+        android:layout_marginBottom="8dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxVibro"
+        android:checked="true"
+        android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+        android:layout_alignTop="@+id/textVib"
+        android:layout_toRightOf="@+id/UriPath"
+        android:layout_toEndOf="@+id/UriPath" />
+
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarVolume"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/checkBoxVibro"
+        android:layout_toEndOf="@+id/imageSpeaker"
+        android:layout_toRightOf="@+id/imageSpeaker"
+        android:layout_marginRight="38dp" />
+
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_Sound"
+        android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+        android:layout_below="@+id/imageSpeaker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/ChooseAudioFile"
+        android:id="@+id/UriPath"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_alignBaseline="@+id/buttonChooseSound"
+        android:layout_alignBottom="@+id/buttonChooseSound"
+        android:layout_alignLeft="@+id/spinner_Sound"
+        android:layout_alignStart="@+id/spinner_Sound" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/buttonChooseSound"
+        android:textColor="@color/normal_color"
+        android:onClick="ClickButtonSound"
+        android:background="@drawable/selector_button"
+        android:layout_below="@+id/spinner_Sound"
+        android:layout_alignLeft="@+id/imageSpeaker"
+        android:layout_alignStart="@+id/imageSpeaker"
+        android:layout_marginTop="35dp"
+        android:clickable="true" />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageSpeaker"
+        android:src="@drawable/speaker"
+        android:layout_marginLeft="27dp"
+        android:layout_below="@+id/checkBoxVibro"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/Vibro"
+        android:id="@+id/textVib"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="13dp"
+        android:layout_below="@+id/interval_pic"
+        android:layout_alignLeft="@+id/interval_text"
+        android:layout_alignStart="@+id/interval_text"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="25dp" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:id="@+id/interval_pic"
+        android:src="@drawable/interval_pic"
+        android:layout_alignBottom="@+id/interval_text"
+        android:layout_alignLeft="@+id/vibro_pic"
+        android:layout_alignStart="@+id/vibro_pic"
+        android:layout_marginLeft="-12dp"
+        android:layout_marginBottom="-7dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/vibro_pic"
+        android:src="@drawable/vibro_pic"
+        android:layout_above="@+id/imageSpeaker"
+        android:layout_alignLeft="@+id/imageSpeaker"
+        android:layout_alignStart="@+id/imageSpeaker"
+        android:layout_marginBottom="-5dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/desert"
+        android:src="@drawable/desert"
+        android:layout_alignTop="@+id/UriPath"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="57dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:id="@+id/black_background"
+        android:src="#000000"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/SilentMode"
+        android:id="@+id/silent_text"
+        android:textColor="#4759ff"
+        android:textSize="24dp"
+        android:layout_alignTop="@+id/black_background"
+        android:layout_toRightOf="@+id/interval_pic"
+        android:layout_toEndOf="@+id/interval_pic"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/startTime"
+        android:id="@+id/txtStart"
+        android:textColor="#4759ff"
+        android:textSize="24dp"
+        android:layout_below="@+id/silent_text"
+        android:layout_alignLeft="@+id/buttonChooseSound"
+        android:layout_alignStart="@+id/buttonChooseSound"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="22:00"
+        android:id="@+id/textStart"
+        android:textColor="@color/selector_alarm_clock"
+        android:textSize="24dp"
+        android:layout_alignBottom="@+id/txtStart"
+        android:layout_toRightOf="@+id/imageSpeaker"
+        android:layout_toEndOf="@+id/imageSpeaker" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/endTime"
+        android:id="@+id/txtEnd"
+        android:textColor="#4759ff"
+        android:textSize="24dp"
+        android:layout_alignBottom="@+id/textStart"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="06:00"
+        android:id="@+id/textEnd"
+        android:textColor="@color/selector_alarm_clock"
+        android:textSize="24dp"
+        android:layout_alignBottom="@+id/txtEnd"
+        android:layout_toLeftOf="@+id/radioButtonCustomRingtone"
+        android:layout_toStartOf="@+id/radioButtonCustomRingtone" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/buben_pic"
+        android:src="@drawable/buben"
+        android:layout_alignTop="@+id/spinner_Sound"
+        android:layout_alignLeft="@+id/imageSpeaker"
+        android:layout_alignStart="@+id/imageSpeaker"
+        android:layout_marginTop="-10dp" />
+
+
+</RelativeLayout>
