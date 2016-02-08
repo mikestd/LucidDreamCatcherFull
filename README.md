@@ -6,5 +6,5 @@ I did the full version and decide to post here :)
 - added opportunity to create a custom targets (icon and description) and delete it (long tap);
 - fixed bugs;
 
-You may download the APK from Wiki. 
+You may download the APK from "Releases". 
 
