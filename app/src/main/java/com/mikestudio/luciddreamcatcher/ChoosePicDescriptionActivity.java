@@ -23,7 +23,10 @@ public class ChoosePicDescriptionActivity extends AppCompatActivity implements V
     ImageView bird, bed, bike, brain, cash, cat, sun, clouds, dig, door, drops, fire, flower, goman,
                 home, icecream, kettle, keys, lamp, leafs, lightning, lights, loudspeaker, penguin,
                 phonecell, phonewire, plain, purse, pyramid, rocket, snow, snowman, spider, stair, stop,
-                stopman, clock, teacher, trash, tv, vegetables, wheel, window;
+                stopman, clock, teacher, trash, tv, vegetables, wheel, window, audi, bmw, vaz, volvo, gaz,
+                daewoo, kamaz, kia, lada, lamborghini, lexus, maz, mazda, mersedes, mitsubishi, nissan,
+                opel, peugeot, porsche, renault, citroen, subaru, toyota, fiat, volkswagen, ford, honda,
+                chevrolet, shkoda, jaguar;
     TextView textCancel, textOk;
     EditText edit_Description;
 
@@ -77,6 +80,39 @@ public class ChoosePicDescriptionActivity extends AppCompatActivity implements V
         textCancel = (TextView)findViewById(R.id.text_cancel); textCancel.setOnClickListener(this);
         textOk = (TextView)findViewById(R.id.text_yes); textOk.setOnClickListener(this);
         edit_Description = (EditText)findViewById(R.id.editText);
+
+
+        audi = (ImageView)findViewById(R.id.img_audi); audi.setOnClickListener(this);
+        bmw = (ImageView)findViewById(R.id.img_bmw); bmw.setOnClickListener(this);
+        vaz = (ImageView)findViewById(R.id.img_vaz); vaz.setOnClickListener(this);
+        volvo = (ImageView)findViewById(R.id.img_volvo); volvo.setOnClickListener(this);
+        gaz = (ImageView)findViewById(R.id.img_gaz); gaz.setOnClickListener(this);
+        daewoo = (ImageView)findViewById(R.id.img_daewoo); daewoo.setOnClickListener(this);
+        kamaz = (ImageView)findViewById(R.id.img_kamaz); kamaz.setOnClickListener(this);
+        kia = (ImageView)findViewById(R.id.img_kia); kia.setOnClickListener(this);
+        lada = (ImageView)findViewById(R.id.img_lada); lada.setOnClickListener(this);
+        lamborghini = (ImageView)findViewById(R.id.img_lamborghini); lamborghini.setOnClickListener(this);
+        lexus = (ImageView)findViewById(R.id.img_lexus); lexus.setOnClickListener(this);
+        maz = (ImageView)findViewById(R.id.img_maz); maz.setOnClickListener(this);
+        mazda = (ImageView)findViewById(R.id.img_mazda); mazda.setOnClickListener(this);
+        mersedes = (ImageView)findViewById(R.id.img_mersedes); mersedes.setOnClickListener(this);
+        mitsubishi = (ImageView)findViewById(R.id.img_mitsubishi); mitsubishi.setOnClickListener(this);
+        nissan = (ImageView)findViewById(R.id.img_nissan); nissan.setOnClickListener(this);
+        opel = (ImageView)findViewById(R.id.img_opel); opel.setOnClickListener(this);
+        peugeot = (ImageView)findViewById(R.id.img_peugeot); peugeot.setOnClickListener(this);
+        porsche = (ImageView)findViewById(R.id.img_porsche); porsche.setOnClickListener(this);
+        renault = (ImageView)findViewById(R.id.img_renault); renault.setOnClickListener(this);
+        citroen = (ImageView)findViewById(R.id.img_citroen); citroen.setOnClickListener(this);
+        subaru = (ImageView)findViewById(R.id.img_subaru); subaru.setOnClickListener(this);
+        toyota = (ImageView)findViewById(R.id.img_toyota); toyota.setOnClickListener(this);
+        fiat = (ImageView)findViewById(R.id.img_fiat); fiat.setOnClickListener(this);
+        volkswagen = (ImageView)findViewById(R.id.img_volkswagen); volkswagen.setOnClickListener(this);
+        ford = (ImageView)findViewById(R.id.img_ford); ford.setOnClickListener(this);
+        honda = (ImageView)findViewById(R.id.img_honda); honda.setOnClickListener(this);
+        chevrolet = (ImageView)findViewById(R.id.img_chevrolet); chevrolet.setOnClickListener(this);
+        shkoda = (ImageView)findViewById(R.id.img_shkoda); shkoda.setOnClickListener(this);
+        jaguar = (ImageView)findViewById(R.id.img_jaguar); jaguar.setOnClickListener(this);
+
 
         answerIntent = new Intent();
     }
