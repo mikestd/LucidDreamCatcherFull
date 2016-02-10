@@ -16,7 +16,7 @@
     <string name="then_tap">а затем\n нажми</string>
     <string name="description_hint">Введите описание к мишени</string>
     <string name="length">Длина текста не должна превышать 50 символов</string>
-    <string name="picture">Выберите пиктограмму мишени</string>
+    <string name="picture">Выберите описание и пиктограмму мишени</string>
 
     <string name="interval">Интервал</string>
     <string name="setAlarm">Установить сигнал</string>

@@ -101,7 +101,7 @@ public class ChoosePicDescriptionActivity extends AppCompatActivity implements V
                 break;
             case R.id.text_yes :
                 if (edit_Description.getText().toString().length() <= 50) {
-                    if (img_tag != null) {
+                    if (img_tag != null && !edit_Description.getText().toString().equals("")) {
                         answerIntent.putExtra(TEXT, edit_Description.getText().toString());
                         setResult(RESULT_OK, answerIntent);
                         finish();
