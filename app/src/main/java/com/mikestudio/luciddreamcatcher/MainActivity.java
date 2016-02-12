@@ -377,9 +377,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         target3.setEnabled(true);
         target4.setEnabled(true);
         mainSettings =  getSharedPreferences(SETTING_MAIN_ACTIVITY, Context.MODE_PRIVATE);
-        boolean firstRun = mainSettings.getBoolean("firstRun", true);
-        if (firstRun) {
-            mainSettings.edit().putBoolean("firstRun", false).apply();
+        int version = mainSettings.getInt("version", 1);
+        if (BuildConfig.VERSION_CODE > version) {
+            mainSettings.edit().putInt("version", BuildConfig.VERSION_CODE).apply();
             editor.remove("img1").apply();
             editor.remove("img2").apply();
             editor.remove("img3").apply();

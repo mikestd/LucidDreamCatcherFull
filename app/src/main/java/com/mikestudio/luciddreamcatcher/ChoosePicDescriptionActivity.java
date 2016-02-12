@@ -26,7 +26,9 @@ public class ChoosePicDescriptionActivity extends AppCompatActivity implements V
                 stopman, clock, teacher, trash, tv, vegetables, wheel, window, audi, bmw, vaz, volvo, gaz,
                 daewoo, kamaz, kia, lada, lamborghini, lexus, maz, mazda, mersedes, mitsubishi, nissan,
                 opel, peugeot, porsche, renault, citroen, subaru, toyota, fiat, volkswagen, ford, honda,
-                chevrolet, shkoda, jaguar;
+                chevrolet, shkoda, jaguar, bottle, greentree, woman, womanshoe, lock, star, sound, snake,
+                autowheel, ship, moon, man, automobile, leg, present, candle, power, taxi, ear, finishflags,
+                balloon;
     TextView textCancel, textOk;
     EditText edit_Description;
 
@@ -112,7 +114,27 @@ public class ChoosePicDescriptionActivity extends AppCompatActivity implements V
         chevrolet = (ImageView)findViewById(R.id.img_chevrolet); chevrolet.setOnClickListener(this);
         shkoda = (ImageView)findViewById(R.id.img_shkoda); shkoda.setOnClickListener(this);
         jaguar = (ImageView)findViewById(R.id.img_jaguar); jaguar.setOnClickListener(this);
-
+        bottle = (ImageView)findViewById(R.id.img_bottle); bottle.setOnClickListener(this);
+        greentree = (ImageView)findViewById(R.id.img_greentree); greentree.setOnClickListener(this);
+        woman = (ImageView)findViewById(R.id.img_woman); woman.setOnClickListener(this);
+        womanshoe = (ImageView)findViewById(R.id.img_womanshoe); womanshoe.setOnClickListener(this);
+        lock = (ImageView)findViewById(R.id.img_lock); lock.setOnClickListener(this);
+        star = (ImageView)findViewById(R.id.img_star); star.setOnClickListener(this);
+        sound = (ImageView)findViewById(R.id.img_sound); sound.setOnClickListener(this);
+        snake = (ImageView)findViewById(R.id.img_snake); snake.setOnClickListener(this);
+        autowheel = (ImageView)findViewById(R.id.img_autowheel); autowheel.setOnClickListener(this);
+        ship = (ImageView)findViewById(R.id.img_ship); ship.setOnClickListener(this);
+        moon = (ImageView)findViewById(R.id.img_moon); moon.setOnClickListener(this);
+        man = (ImageView)findViewById(R.id.img_man); man.setOnClickListener(this);
+        automobile = (ImageView)findViewById(R.id.img_automobile); automobile.setOnClickListener(this);
+        leg = (ImageView)findViewById(R.id.img_leg); leg.setOnClickListener(this);
+        present = (ImageView)findViewById(R.id.img_present); present.setOnClickListener(this);
+        candle = (ImageView)findViewById(R.id.img_candle); candle.setOnClickListener(this);
+        power = (ImageView)findViewById(R.id.img_power); power.setOnClickListener(this);
+        taxi = (ImageView)findViewById(R.id.img_taxi); taxi.setOnClickListener(this);
+        ear = (ImageView)findViewById(R.id.img_ear); ear.setOnClickListener(this);
+        finishflags = (ImageView)findViewById(R.id.img_finishflags); finishflags.setOnClickListener(this);
+        balloon = (ImageView)findViewById(R.id.img_balloon); balloon.setOnClickListener(this);
 
         answerIntent = new Intent();
     }
