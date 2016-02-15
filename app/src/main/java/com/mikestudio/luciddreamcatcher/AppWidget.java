@@ -80,7 +80,7 @@ public class AppWidget extends AppWidgetProvider {
         AlarmManager alarmManager = (AlarmManager) context
                 .getSystemService(Context.ALARM_SERVICE);
         alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(),
-                60000, pIntent);
+                1800000, pIntent);
     }
 
     @Override
@@ -372,7 +372,7 @@ public class AppWidget extends AppWidgetProvider {
             isReset = reset.getBoolean("isReset", false);
         }
 
-        if (hours * 3600 + minutes * 60 + seconds <= 1800) {
+        if (hours * 3600 + minutes * 60 + seconds <= 1800) {//проверяем на полуночь
             if (!isReset) {
                 isReset = true;
                 isClear = true;
