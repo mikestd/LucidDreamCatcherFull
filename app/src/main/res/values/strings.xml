@@ -17,6 +17,7 @@
     <string name="description_hint">Enter a description of the target</string>
     <string name="length">The length of the text can\'t be over 50 symbols</string>
     <string name="picture">Choose a description and a picture of target</string>
+    <string name="matcher">This picture or description is already exist!</string>
 
     <string name="interval">Range</string>
     <string name="setAlarm">Set alarm</string>

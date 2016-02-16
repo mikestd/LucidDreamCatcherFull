@@ -1,6 +1,7 @@
 package com.mikestudio.luciddreamcatcher;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 public class ChoosePicDescriptionActivity extends AppCompatActivity implements View.OnClickListener {
     final static String TEXT ="com.mikestudio.luciddreamcatcher.TEXT";
     final static String SRC = "com.mikestudio.luciddreamcatcher.SRC";
+    public SharedPreferences preferences;
     int temp_count = 0;
     ImageView img_temp;
     String img_tag;
@@ -31,11 +33,18 @@ public class ChoosePicDescriptionActivity extends AppCompatActivity implements V
                 balloon;
     TextView textCancel, textOk;
     EditText edit_Description;
+    public String mTargetString;
+    public String mImageString = "add";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        preferences = getSharedPreferences(TargetListActivity.SAVE, MODE_PRIVATE);
+        mTargetString = preferences.getString("TargetArray", getString(R.string.Add));
+        mImageString = preferences.getString("ImageArray", "add");
+        Toast.makeText(getApplicationContext(), mImageString, Toast.LENGTH_LONG).show();
         setContentView(R.layout.activity_choose_pic_description);
+
         bird = (ImageView)findViewById(R.id.img_bird); bird.setOnClickListener(this);
         bed = (ImageView)findViewById(R.id.img_bed); bed.setOnClickListener(this);
         bike = (ImageView)findViewById(R.id.img_bike); bike.setOnClickListener(this);
@@ -160,9 +169,11 @@ public class ChoosePicDescriptionActivity extends AppCompatActivity implements V
             case R.id.text_yes :
                 if (edit_Description.getText().toString().length() <= 50) {
                     if (img_tag != null && !edit_Description.getText().toString().equals("")) {
-                        answerIntent.putExtra(TEXT, edit_Description.getText().toString());
-                        setResult(RESULT_OK, answerIntent);
-                        finish();
+                        if (!mTargetString.contains(edit_Description.getText().toString()) && !mImageString.contains(img_tag)) {
+                            answerIntent.putExtra(TEXT, edit_Description.getText().toString());
+                            setResult(RESULT_OK, answerIntent);
+                            finish();
+                        } else Toast.makeText(getApplicationContext(), getString(R.string.matcher), Toast.LENGTH_LONG).show();
                     } else Toast.makeText(getApplicationContext(), getString(R.string.picture), Toast.LENGTH_LONG).show();
                 } else {
                     Toast.makeText(getApplicationContext(), getString(R.string.length), Toast.LENGTH_LONG).show();

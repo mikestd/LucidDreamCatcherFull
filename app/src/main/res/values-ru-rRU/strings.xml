@@ -17,6 +17,7 @@
     <string name="description_hint">Введите описание к мишени</string>
     <string name="length">Длина текста не должна превышать 50 символов</string>
     <string name="picture">Выберите описание и пиктограмму мишени</string>
+    <string name="matcher">Такая пиктограмма или описание уже есть!</string>
 
     <string name="interval">Интервал</string>
     <string name="setAlarm">Установить сигнал</string>

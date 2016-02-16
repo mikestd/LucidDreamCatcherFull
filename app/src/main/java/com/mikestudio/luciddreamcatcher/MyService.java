@@ -284,7 +284,7 @@ public class MyService extends Service {
                         vibrator.vibrate(pattern, -1);
                         isVibrate = true;
                     }
-                    counter = new CountDownTimer(10000, 1000) { //запускаем таймер 10000 - все время, 1000 - один тик!
+                    counter = new CountDownTimer(25000, 1000) { //запускаем таймер 25000 - все время, 1000 - один тик!
 
                         @Override
                         public void onTick(long millisUntilFinished) {
