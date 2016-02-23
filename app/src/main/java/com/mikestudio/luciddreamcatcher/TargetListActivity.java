@@ -36,27 +36,27 @@ public class TargetListActivity extends ListActivity implements AdapterView.OnIt
             R.mipmap.home,
             R.mipmap.dig,
             R.mipmap.cat};*/
-    public String mTargetArray;
+    public String mTargetString;
     public String [] s;
-    public String mImageArray = "add";
+    public String mImageString = "add";
     public String[]img;
     private TargetAdapter mAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mTargetArray = getString(R.string.Add);
+        mTargetString = getString(R.string.Add);
         preferences = getSharedPreferences(SAVE, MODE_PRIVATE);
         if (preferences.contains("TargetArray")){
-            mTargetArray = preferences.getString("TargetArray", getString(R.string.Add));
-            s = mTargetArray.split("%");
+            mTargetString = preferences.getString("TargetArray", getString(R.string.Add));
+            s = mTargetString.split("%");
         } else {
-            s = mTargetArray.split("%");
+            s = mTargetString.split("%");
         }
         if (preferences.contains("ImageArray")){
-            mImageArray = preferences.getString("ImageArray", "add");
-            img = mImageArray.split("%");
+            mImageString = preferences.getString("ImageArray", "add");
+            img = mImageString.split("%");
         } else {
-            img = mImageArray.split("%");
+            img = mImageString.split("%");
         }
         mAdapter = new TargetAdapter(this);
         setListAdapter(mAdapter);
@@ -70,13 +70,13 @@ public class TargetListActivity extends ListActivity implements AdapterView.OnIt
             if (resultCode == RESULT_OK) {
                 String tempStr = data.getStringExtra(ChoosePicDescriptionActivity.TEXT);
                 String tempImg = data.getStringExtra(ChoosePicDescriptionActivity.SRC);
-                mTargetArray = mTargetArray + "%" + tempStr;
-                mImageArray = mImageArray + "%" + tempImg;
-                s = mTargetArray.split("%");
-                img = mImageArray.split("%");
+                mTargetString = mTargetString + "%" + tempStr;
+                mImageString = mImageString + "%" + tempImg;
+                s = mTargetString.split("%");
+                img = mImageString.split("%");
                 SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("TargetArray", mTargetArray);
-                editor.putString("ImageArray", mImageArray);
+                editor.putString("TargetArray", mTargetString);
+                editor.putString("ImageArray", mImageString);
                 editor.apply();
                 mAdapter.notifyDataSetChanged();
             }
@@ -103,13 +103,13 @@ public class TargetListActivity extends ListActivity implements AdapterView.OnIt
     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
         if (position == 0) {
         } else {
-            mTargetArray = mTargetArray.replaceAll("%" + s[position], "");
-            mImageArray = mImageArray.replaceAll("%" + img[position], "");
-            s = mTargetArray.split("%");
-            img = mImageArray.split("%");
+            mTargetString = mTargetString.replaceAll("%" + s[position], "");
+            mImageString = mImageString.replaceAll("%" + img[position], "");
+            s = mTargetString.split("%");
+            img = mImageString.split("%");
             SharedPreferences.Editor editor = preferences.edit();
-            editor.putString("TargetArray", mTargetArray);
-            editor.putString("ImageArray", mImageArray);
+            editor.putString("TargetArray", mTargetString);
+            editor.putString("ImageArray", mImageString);
             editor.apply();
             mAdapter.notifyDataSetChanged();
         }

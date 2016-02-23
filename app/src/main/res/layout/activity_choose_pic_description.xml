@@ -479,7 +479,7 @@
                 android:src="@mipmap/maz"
                 android:layout_row="8"
                 android:layout_column="5"
-                android:tag="mazda"/>
+                android:tag="maz"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
